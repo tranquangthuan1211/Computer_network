@@ -88,7 +88,7 @@ class Send:
             message_size_bytes = len(message.as_string().encode())
             message_size_kb = message_size_bytes / 1024  # Chuyển đổi dung lượng sang kilobytes
 
-            if( message_size_kb > 0.5):
+            if( message_size_kb > 3000):
                 client_socket.sendall(b'\r\n.\r\n')
                 print('kich thuoc qua lon khong the gui !!!')
                 client_socket.sendall(b'QUIT\r\n')
