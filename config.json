@@ -1,0 +1,26 @@
+{
+    "smtp_server": "127.0.0.1",
+    "smtp_port": 2225,
+    "pop3_server": "127.0.0.1",
+    "pop3_port": 3335,
+    "download_folder": "Downloads",
+    "filters": [
+      {
+        "folder": "IMPORTANT",
+        "subject": ["IMPORTANT","URGENT"]
+      },
+      {
+        "folder": "DIFICULT",
+        "subject":[ "kho"]
+      },
+      {
+        "folder": "WORK",
+        "address": ["abc@gmail.com","company@gmail.com"]
+      },
+      {
+        "folder": "SPAM",
+        "spam_words":[ "zui","virus","hack"]
+      }
+    ]
+  }
+  
